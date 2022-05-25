@@ -174,3 +174,16 @@ body {
 .flick:hover {
   transform: translateY(-5px);
 }
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 0;
+  }
+
+  .section-container,
+  .footer {
+    width: 100vw;
+  }
+}

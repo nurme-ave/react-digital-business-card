@@ -72,6 +72,7 @@ body {
 }
 
 .ninja-icon {
+  height: 1.1em;
   animation: rotatingNinja 5s infinite;
 }
 

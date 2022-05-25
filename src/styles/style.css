@@ -10,38 +10,45 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  background: #23252c;
 }
 
 
 /* Style for App.js */
-.container {
+.main-container {
+  width: 100%;
+  max-width: 500px;
   min-height: 100vh;
-  padding: 5em 0;
-  background-color: #23252C;
-}
-
-
-/* Style for Info.js, About.js, Interests.js */
-.section-container {
-  display: flex;
-  flex-direction: column;
-  width: 425px;
   margin: 0 auto;
-  color: #fff;
   background: #1A1B21;
 }
 
 
-/* Style for Info.js */
-.info {
+/* Style for Info.js, About.js and Interests.js */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2em;
+  width: 19em;
+  margin: 0 auto;
+  color: #fff;
 }
 
+.card-container > * {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Style for Info.js */
 .info-image {
   display: block;
   width: 100%;
-  border-radius: .5em .5em 0 0;
+}
+
+.card-container-info {
+  padding-top: 2em;
 }
 
 .info-text {
@@ -54,23 +61,32 @@ body {
 
 .info-title {
   font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.info-occupation,
-.info-website {
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .info-occupation {
   color: #F3BF99;
 }
 
+.info-icon {
+  margin: 0 .5em;
+}
+
+.ninja-icon {
+  animation: rotatingNinja 5s infinite;
+}
+
+@keyframes rotatingNinja {
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
 .info-website {
+  margin-bottom: 1em;
+  padding: 1em;
   text-decoration: none;
   color: #fff;
-  margin-top: .25em;
   opacity: .9;
 }
 
@@ -79,8 +95,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  margin-bottom: 2em;
-  padding: 0 3.7em;
 }
 
 .info-button-links > a {
@@ -102,69 +116,66 @@ body {
   background-color: #5093E2;
 }
 
-.info-icon {
-  margin: 0 .5em;
-}
-
-.ninja-icon {
-  animation: rotatingNinja 5s infinite;
-}
-
-@keyframes rotatingNinja {
-  100% {
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-}
-
 
 /* Style for About.js and Interests.js */
-.about-interests {
-  align-items: flex-start;
-  gap: .5em;
-  padding: 0 3.7em;
-}
-
-.about-interests-title,
-.about-interests-text {
-  text-align: left;
-}
-
 .about-interests-title {
+  margin-bottom: .25em;
   font-size: 1.4rem;
   font-weight: 700;
 }
 
 .about-interests-text {
-  margin-bottom: 2em;
-  font-size: .9rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+
+
+/* Style for About.js */
+.card-container-about {
+  padding: 2em 0;
+  opacity: .9;
+}
+
+
+/* Style for Interests.js */
+.card-container-interests {
+  padding-bottom: 2em;
+  opacity: .9;
 }
 
 
 /* Style for Footer.js */
-.footer {
+.card-container-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
   gap: 1.5em;
-  width: 425px;
-  height: 1.5em;
   margin: 0 auto;
-  padding: 2.5em 0;
-  border-radius: 0 0 .5em .5em;
-  background-color: #161619;
+  padding: 2em;
+  background-color: #fff;
 }
 
-.footer a {
+.card-container-footer a {
   text-decoration: none;
-  color: #fff;
 }
 
 .footer-icon {
   height: 1.5em;
+}
+
+.footer-icon-twitter {
+  color: #1DA1F2;
+}
+
+.footer-icon-youtube {
+  color: #ef233c;
+}
+
+.footer-icon-github{
+  color: #000;
 }
 
 .flick {
@@ -177,14 +188,28 @@ body {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 500px) {
-  .container {
-    padding: 0 0;
-    overflow-x: hidden;
+@media screen and (min-width: 500px) {
+  .main-container {
+    margin: 4em auto;
   }
 
-  .section-container,
-  .footer {
-    width: 100%;
+  .info-image {
+    border-radius: .5em .5em 0 0;
+  }
+
+  .card-container-info {
+    padding-top: 3em;
+  }
+
+  .card-container-about {
+    padding: 2.4em 0 2em 0;
+  }
+
+  .card-container-interests {
+    padding-bottom: 3em;
+  }
+  
+  .card-container-footer{
+    border-radius: 0 0 .5em .5em;
   }
 }

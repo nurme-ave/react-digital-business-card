@@ -184,6 +184,6 @@ body {
 
   .section-container,
   .footer {
-    width: 100vw;
+    width: 100%;
   }
 }

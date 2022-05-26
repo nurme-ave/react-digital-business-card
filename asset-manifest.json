@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-digital-business-card/static/css/main.381eea8d.css",
-    "main.js": "/react-digital-business-card/static/js/main.d3ea3473.js",
+    "main.js": "/react-digital-business-card/static/js/main.2edc0eaf.js",
     "static/media/seascape.jpg": "/react-digital-business-card/static/media/seascape.dd7300e7bd8db524acf7.jpg",
     "index.html": "/react-digital-business-card/index.html",
     "main.381eea8d.css.map": "/react-digital-business-card/static/css/main.381eea8d.css.map",
-    "main.d3ea3473.js.map": "/react-digital-business-card/static/js/main.d3ea3473.js.map"
+    "main.2edc0eaf.js.map": "/react-digital-business-card/static/js/main.2edc0eaf.js.map"
   },
   "entrypoints": [
     "static/css/main.381eea8d.css",
-    "static/js/main.d3ea3473.js"
+    "static/js/main.2edc0eaf.js"
   ]
 }

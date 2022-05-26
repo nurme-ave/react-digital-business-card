@@ -6,7 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Info() {
   return (
-    <section>
+    <header>
       <img src={image} alt="me" className="info-image"></img>
       <div className="card-container card-container-info">
         <div className="info-text">
@@ -23,7 +23,7 @@ function Info() {
             <FontAwesomeIcon icon={ faLinkedin } className="info-icon" />LinkedIn</a>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 

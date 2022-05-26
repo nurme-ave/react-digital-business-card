@@ -4,7 +4,7 @@ import { faTwitter, faYoutube, faGithub } from '@fortawesome/free-brands-svg-ico
 
 function Footer() {
   return (
-    <section>
+    <footer>
       <div className="card-container-footer">
         <a href="https://twitter.com/ave_nurme" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={ faTwitter } className="footer-icon footer-icon-twitter flick" />
@@ -16,7 +16,7 @@ function Footer() {
           <FontAwesomeIcon icon={ faGithub } className="footer-icon footer-icon-github flick" />
         </a>
       </div>
-    </section>
+    </footer>
   );
 }
 
